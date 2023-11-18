@@ -23,7 +23,7 @@
 
 .user-component__subtitle {
   margin-top: 8px;
-  color: var(--main-color);
+  color: var(--gray-color);
 }
 
 .user-component__profile-xl {
@@ -41,7 +41,7 @@
 }
 
 .user-component__column:last-child {
-  color: var(--main-color);
+  color: var(--gray-color);
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -50,5 +50,20 @@
 .user-component__time {
   display: block;
   margin-bottom: 8px;
-  color: var(--main-color);
+  color: var(--gray-color);
+}
+
+.user-component__phone-number {
+  display: flex;
+  align-items: center;
+  color: tomato;
+}
+
+.fa-circle-exclamation {
+  margin-top: 7px;
+  margin-left: 7px;
+}
+
+.fa-message {
+  color: black;
 }
