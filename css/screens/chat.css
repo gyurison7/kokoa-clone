@@ -1,6 +1,10 @@
 #chat-screen {
-  background-color: #abc1d1;
-  height: 500vh;
+  /* background-color: #abc1d1; */
+  height: 100vh;
+  background-image: url("../../img/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #chat-screen .alt-header {
@@ -8,7 +12,7 @@
   width: 100%;
   top: 0;
   box-sizing: border-box;
-  background-color: #abc1d1;
+  /* background-color: #abc1d1; */
 }
 
 #chat-screen .status-bar {
@@ -65,13 +69,44 @@
   }
 }
 
+.message-row:nth-child(2) {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: fromLeft 0.3s linear forwards;
+}
+
+.message-row__my:nth-child(3) {
+  opacity: 0;
+  transform: translateX(50px);
+  animation: fromRight 0.5s linear forwards;
+  animation-delay: 0.3s;
+}
+
+.message-row:nth-child(4) {
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: fromLeft 0.5s linear forwards;
+  animation-delay: 0.6s;
+}
+
+.message-row__my:nth-child(5) {
+  opacity: 0;
+  transform: translateX(50px);
+  animation: fromRight 0.5s linear forwards;
+  animation-delay: 0.9s;
+}
+
+.message-row__my:nth-child(6) {
+  opacity: 0;
+  transform: translateX(50px);
+  animation: fromRight 0.5s linear forwards;
+  animation-delay: 1.2s;
+}
+
 .message-row {
   width: 100%;
   display: flex;
   margin-bottom: 25px;
-  opacity: 0;
-  transform: translateX(-50px);
-  animation: fromLeft 0.5s linear forwards;
 }
 
 .message-row img {
@@ -113,10 +148,6 @@
 
 .message-row__my {
   justify-content: flex-end;
-  opacity: 0;
-  transform: translateX(50px);
-  animation: fromRight 0.5s linear forwards;
-  animation-delay: 0.5s;
 }
 
 .message-row__my .message__payload {
@@ -134,6 +165,12 @@
   border-top-right-radius: 0;
   margin-right: 0;
   /* order: 1; */
+}
+
+.message_read {
+  margin-right: 8px;
+  color: var(--yellow);
+  font-size: 14px;
 }
 
 .reply {

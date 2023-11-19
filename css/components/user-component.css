@@ -1,6 +1,6 @@
 .user-component {
   justify-content: space-between;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .user-component,
@@ -66,4 +66,15 @@
 
 .fa-message {
   color: black;
+}
+
+.user-component__message {
+  color: #9c9c9c;
+}
+
+.user-component__music {
+  padding: 5px 10px;
+  border-radius: 15px;
+  border: 1px solid #00cd3c;
+  font-size: 14px;
 }

@@ -43,6 +43,7 @@
     transform: rotate(360deg);
   }
 }
-.screen-header__icons .fa-gear:hover {
+
+.fa-gear:hover {
   animation: rotateGear 2s linear infinite;
 }

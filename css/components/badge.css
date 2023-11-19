@@ -1,3 +1,15 @@
+@keyframes badgeAnimation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: none;
+  }
+}
+
 .badge {
   display: flex;
   justify-content: center;
@@ -9,6 +21,10 @@
   color: white;
   font-size: 14px;
   font-weight: 600;
+}
+
+.badge-animation {
+  animation: badgeAnimation 0.5s ease-in-out infinite;
 }
 
 .dot {
